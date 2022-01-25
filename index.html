@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/typed.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">PORTFO<span>LIO</span></div>
+
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+        </nav>
+
+        <div class="text">
+            <p>Hello, I am</p>
+            <h1>Nayana Kamsena</h1>
+            <p>And I am a <span id="ani" style="color:#e74c3c"></span></p>
+            <button class="c-btn">Hire me</button>
+        </div>
+    </header>
+    <section id="about">
+        <div class="section-Info">
+            <h1>About</h1>
+            <p>Who i am?</p>
+        </div>
+
+        <div class="about-row">
+            <div class="about-left-col">
+                <img src="images/WhatsApp Image 2021-12-02 at 9.21.40 PM.jpeg">
+            </div>
+
+            <div class="about-right-col">
+                <p id="p-title">
+                    Hello,I'm Nayana & I'm a <span id="ani2" style="color:#e74c3c"></span>
+                </p>
+            <p>The main role of Software Faculty are "Planning lessons and activities that facilitate students' acquisition of basic and advanced computer skills,Instructing in a manner that develops students' confidence in their abilities"</p>
+            <button class="c-btn"><a href="index2.html">Download CV</a> </button>
+        </div>
+            </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-Info">
+            <h1>Skills</h1>
+        </div>
+
+        <div class="skills-row">
+            <div class="skills-left-col">
+                <p>Basic computer skills refer to the ability to use computers and related technology to perform fundamental tasks.</p>
+                <button class="c-btn">Read more</button>
+            </div>
+            <div class="skills-right-col"></div>
+                <div class="progress-div">
+                    <p>
+                    <span>MS OFFICE(MS-Word,MS-Excel,MS-Powerpoint)</span><br>
+                    <progress value="80" max="100"></progress>
+                    <span>80%</span>
+                    </p>
+                    <p>
+                        <span>DTP(Photoshop,Corel-Draw)</span><br>
+                        <progress value="60" max="100"></progress>
+                        <span>80%</span>
+                        </p>
+                        <p>
+                            <span>HTML5,CSS</span><br>
+                            <progress value="80" max="100"></progress>
+                            <span>80%</span>
+                            </p>
+                            <p>
+                                <span>Bootstrap</span><br>
+                                <progress value="80" max="100"></progress>
+                                <span>80%</span>
+                                </p>
+                                <p>
+                                    <span>C Programming</span><br>
+                                    <progress value="60" max="100"></progress>
+                                    <span>80%</span>
+                                    </p>
+                                    <p>
+                                        <span>Tally ERP 9</span><br>
+                                        <progress value="50" max="100"></progress>
+                                        <span>80%</span>
+                                        </p>
+                </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="section-Info">
+        <h1>Service</h1>
+        <p>What we provide</p>
+        </div>
+        <div class="services-row">
+            <div class="services-box" data-tilt>
+                <img src="images/it.jpg">
+                <h2>Web Design</h2>
+                <p> Web design is the process of creating websites. It encompasses several different aspects, including webpage layout, content production, and graphic design.</p>
+            </div>
+            <div class="services-box"data-tilt>
+                <img src="images/it.jpg">
+                <h2>Web Development</h2>
+                <p>Web development services are used to design, build, support, and evolve all types of web-based software.</p>
+            </div>
+            <div class="services-box"data-tilt>
+                <img src="images/it.jpg">
+                <h2>Data Entry</h2>
+                <p>Data entry is the process of transcribing information into an electronic medium such as a computer or other electronic device. It can either be performed manually or automatically by using a machine or computer.</p>
+            </div>
+        
+        
+        </div>
+    
+    </section> 
+
+    <section id="contact">
+        <div class="section-Info" style="color:white;">
+            <h1>Get in Touch</h1>
+            <p style="color: aqua;">I'm Available</p>
+        </div>
+        <div class="contact-row">
+            <div class="contact-left-col">
+                <img src="images/ccc.png"> 
+            </div>
+            <div class="contact-right-col">
+                <form>
+                    <h2>Connect with me</h2>
+                    <input type="text"name="" placeholder="Name">
+                    <input type="email" name=""placeholder="Email">
+                    <br>
+                    <textarea cols="40" rows="10" placeholder="Message"></textarea>
+                    <br>
+                    <button class="c-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <h2>Developed by <br>Nayana Kamsena</h2>
+        <img src="images/icon.png" width="100">
+    </section>
+
+
+    <script src="js/jquery.ripples-min.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            $('header').ripples({
+  dropRadius: 20,
+  perturbance: 0.03,
+    });
+        });
+    </script>
+
+    <script>
+        let animate=new Typed('#ani',{
+            strings:["Software Faculty"],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true,
+        })
+    </script>
+
+<script>
+    let animat=new Typed('#ani2',{
+        strings:["Software Faculty"],
+        typeSpeed:100,
+        backSpeed:100,
+        loop:true,
+    })
+</script>
+
+<script src="js/tilt.jquery.min.js"></script>
+</body>
+</html>
